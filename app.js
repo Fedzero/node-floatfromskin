@@ -149,8 +149,7 @@ if(manualBots.length) { // need some info from the user
 				setTimeout(_ => startManualBot(i + 1), 1500) // wait 1.5s for the other bot to print its shit.
 			}
 		});
-	}
-	startManualBot(0)
+	}(0)
 } else {
 	rl = readline.createInterface({
 		input: process.stdin,
